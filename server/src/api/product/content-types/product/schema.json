@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "priceCents": {
+      "type": "biginteger"
+    },
+    "currency": {
+      "type": "string",
+      "default": "EUR"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "manufacturer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::manufacturer.manufacturer",
+      "inversedBy": "products"
+    },
+    "discountPercentage": {
+      "type": "integer"
+    }
+  }
+}

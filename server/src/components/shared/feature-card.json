@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_feature_cards",
+  "info": {
+    "displayName": "feature-card",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

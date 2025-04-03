@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "properties": {
+        "documentation.enable": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable or disable the documentation extension."
+        },
+        "documentation.language": {
+        "type": "string",
+        "default": "en",
+        "description": "Set the language for the documentation."
+        },
+        "documentation.theme": {
+        "type": "string",
+        "default": "light",
+        "description": "Set the theme for the documentation."
+        }
+    }
+}

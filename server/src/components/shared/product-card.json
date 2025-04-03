@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_product_cards",
+  "info": {
+    "displayName": "product-card",
+    "icon": "priceTag"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

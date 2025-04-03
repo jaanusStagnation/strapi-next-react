@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_featured_categories",
+  "info": {
+    "displayName": "featured-categories",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+      
+    }
+  }
+}
